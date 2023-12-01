@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Delivery System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background:#000000 url("water.png");
+            background-size: cover;
+            background-repeat: round;
+        }
+        #loader {
+            background: #000000 url('loader.gif') no-repeat center;
+            background-size: 15%;
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            z-index: 99999;
+
+        }
+
+        header {
+            background-color: rgb(41, 39, 106);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 2px solid rgb(0, 0, 0);
+        }
+
+        nav {
+            display: flex;
+            justify-content: start;
+            background-color: rgb(41, 39, 106);
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav>span {
+            margin-left: 58vw;
+            margin-top: 1vh;
+
+        }
+
+        nav a:hover {
+            background-color: rgb(37, 35, 87);
+            background-blend-mode: darken;
+
+        }
+
+        section {
+            padding: 20px;
+            height: 65vh;
+            text-align: center;
+
+        }
+
+        section>p {
+            font-size: large;
+        }
+
+        footer {
+            background-color: rgb(41, 39, 106);
+            color: white;
+            border-top: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        button {
+            font-weight: bolder;
+            color: #000000;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            background-color: transparent;
+            transition: background-color 0.3s;
+
+        }
+
+        button.h1 {
+            color: rgb(0, 0, 0);
+            background: white;
+
+        }
+
+        button:hover {
+            background-color: rgb(37, 35, 87);
+            color: white;
+            cursor: pointer;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: rgb(41, 39, 106);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        h2 {
+            font-size: 5vh;
+            color: #fff;
+
+        }
+        h1{
+            color: #fff;
+        }
+        p{
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loader"></div>
+
+    <header>
+        <h1>Water Delivery System</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="page.html">Explore</a>
+        <a href="#contact">Contact</a>
+        <span>
+            <a href="Sign up">Sign up</a>
+        </span>
+        <button class="h1">Log in</button>
+
+    </nav>
+
+    <section>
+        <h2>Welcome to our Water Delivery Service</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur voluptate accusamus perferendis harum
+            nemo minima, esse non, praesentium dolorum et, eos repellendus ullam ad quos? Suscipit voluptates dolor
+            inventore quod, corrupti repudiandae consectetur minus incidunt quae enim non quia earum odit, perspiciatis,
+            nostrum molestias cumque mollitia itaque accusamus magni. Repudiandae accusamus praesentium similique
+            doloremque et, quae magni sed quisquam magnam hic quaerat, quod, corporis excepturi error voluptatem. Sed
+            cumque ducimus voluptate laudantium officia non odio perspiciatis molestiae eos. Eius sed fugiat alias
+            molestiae assumenda qui magnam autem ea quidem recusandae error, amet veritatis cum eum veniam vero deserunt
+            quod sequi ?</p>
+        <a href="page.html" class="cta-button">Place Your Order</a>
+    </section>
+
+    <footer>
+        <p> 2023 Water Delivery System. All rights reserved.</p>
+    </footer>
+    <script>
+        var preloader = document.getElementById('loader');
+
+        window.addEventListener('load', function () {
+            loader.style.display = "none";
+        })
+    </script>
+
+</body>
+</html>

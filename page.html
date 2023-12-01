@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #000000 url("water.png");
+            background-repeat: round;
+        }
+
+        #loader {
+            background: #000000 url('loader.gif') no-repeat center;
+            background-size: 15%;
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            z-index: 99999;
+
+        }
+
+        header {
+            background-color: rgb(41, 39, 106);
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            justify-content: space-evenly;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            height: 40%;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            width: 300px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: 50%;
+            border-radius: 4px;
+        }
+
+        p {
+            color: rgb(41, 39, 106);
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        p.footer {
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .price {
+            color: #27ae60;
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: rgb(41, 39, 106);
+            color: #000000;
+            border-top: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        button {
+            position: relative;
+            height: 8%;
+            background: rgb(41, 39, 106);
+            padding: 10px 20px;
+            margin: 0 20px 0 0px;
+            border-radius: 30px;
+            color: white;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: white;
+            color: #000000;
+            cursor: pointer;
+        }
+
+        button.Addtocart {
+            background: rgb(255, 255, 255);
+            padding: 10px 20px;
+            margin: 0 20px 0 0px;
+            border-radius: 30px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+
+        button.Addtocart:hover {
+            color: #000000;
+            cursor: pointer;
+        }
+
+        button.Addtocart>img {
+            height: 15px;
+            width: 15px;
+            margin-right: 5px;
+        }
+
+        #back {
+            position: absolute;
+            top: 30px;
+            left: 20px;
+            cursor: pointer;
+        }
+    </style>
+    <title>Water Delivery System</title>
+</head>
+
+<body>
+    <div id="loader"></div>
+    <header>
+        <div id="back">
+            <a href="gui.html"><img src="icons8-home-48.png" alt="##"></a>
+        </div>
+        <h1>Water Delivery System</h1>
+    </header>
+
+    <section>
+        <div class="product">
+            <img src="water_bottle.png" alt="Water Bottle">
+            <h2>Water Bottle</h2>
+            <p>A convenient and portable water bottle for on-the-go hydration. Stay refreshed wherever you are!</p>
+            <p class="price">₹9.99</p>
+            <a href="page1.html"><button>Order now </button></a>
+            <a href="##"><button class="Addtocart"><img src="icons8-cart-44.png" alt="">Add to Card</button></a>
+        </div>
+
+        <div class="product">
+            <img src="water_tank.png" alt="Water Tank">
+            <h2>Water Tank</h2>
+            <p>A large water tank for home or office use. Ensure a steady supply of pure water for your daily needs.</p>
+            <p class="price">₹599.99</p>
+            <a href="page1.html"><button>Order now </button></a>
+            <button class="Addtocart"><img src="icons8-cart-44.png" alt="">Add to Card</button>
+        </div>
+
+        <div class="product">
+            <img src="water_cane.png" alt="Water Cane">
+            <h2>Water Cane</h2>
+            <p>An eco-friendly water cane for bulk water storage. Say goodbye to single-use plastic bottles!</p>
+            <p class="price">₹59.99</p>
+            <a href="page1.html"><button>Order now </button></a>
+            <button class="Addtocart"><img src="icons8-cart-44.png" alt="">Add to Card</button>
+        </div>
+    </section>
+    <footer>
+        <p class="footer"> 2023 Water Delivery System. All rights reserved.</p>
+    </footer>
+    <script>
+        var preloader = document.getElementById('loader');
+
+        window.addEventListener('load', function () {
+            loader.style.display = "none";
+        })
+    </script>
+</body>
+
+</html>

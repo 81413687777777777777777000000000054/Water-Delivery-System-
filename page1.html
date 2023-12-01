@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #000000 url("water.png");
+            background-repeat: no-repeat;
+            background-repeat: round;
+        }
+
+        #loader {
+            background: #000000 url('loader.gif') no-repeat center;
+            background-size: 15%;
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            z-index: 99999;
+
+        }
+
+        .body {
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+        }
+
+        header {
+            background-color: rgb(41, 39, 106);
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: rgb(41, 39, 106);
+            color: #000000;
+            border-top: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #back {
+            position: absolute;
+            top: 3.5vh;
+            left: 1vw;
+            cursor: pointer;
+        }
+
+        img.center {
+            position: relative;
+            height: 40%;
+            width: 20%;
+            left: 40%;
+            padding: 0% 0 0 0;
+        }
+
+        .footer {
+            color: #fff;
+        }
+
+        .text {
+            position: relative;
+            left: 35%;
+            width: 40%;
+            font-size: 2.5vw;
+            font-weight: bolder;
+            color: royalblue;
+
+        }
+
+        h2 {
+            position: relative;
+            font-weight: lighter;
+            left: 30%;
+            width: 70%;
+            font-size: 2vw;
+            color: rgb(255, 255, 255);
+
+        }
+
+        h2>span {
+            position: relative;
+            left: 15%;
+            font-size: 2vw;
+            color: rgb(255, 255, 255);
+        }
+
+        button {
+            position: relative;
+            left: 42%;
+            height: 8%;
+            width: 15%;
+            background: rgb(41, 39, 106);
+            padding: 10px 20px;
+            margin: 0 30px 40px 0px;
+            border-radius: 30px;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2vw;
+        }
+
+        button:hover {
+            background-color: rgb(37, 35, 87);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+    <title>Water Delivery System</title>
+</head>
+
+<body>
+    <div id="loader"></div>
+    <header>
+        <div id="back">
+            <a href="gui.html"><img src="icons8-home-48.png" alt="##"></a>
+        </div>
+        <h1>Water Delivery System</h1>
+    </header>
+    <div class="body">
+        <div id="img">
+            <img src="confirm.gif" alt="" class="center">
+        </div>
+        <div class="text">
+            Thank you For Oredering !
+        </div>
+        <h2>We'll send you shipping Confirmation by an Email<br>
+            <span>As soon As Order ships</span>
+        </h2>
+        <a href="page.html"><button>continue Shopping</button></a>
+    </div>
+    <footer>
+        <p class="footer">2023 Water Delivery System. All rights reserved.</p>
+    </footer>
+    <script>
+        var preloader = document.getElementById('loader');
+
+        window.addEventListener('load', function () {
+            loader.style.display = "none";
+        })
+    </script>
+</body>
+
+</html>
